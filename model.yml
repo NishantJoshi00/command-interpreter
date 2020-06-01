@@ -1,0 +1,9 @@
+terminal: &TERM "os.system('gnome-terminal')"
+files: &FILE "os.system('nautilus ~ &')"
+file: *FILE
+calculator: &CAL "os.system('gnome-calculator')"
+open:
+  terminal: *TERM
+  files: *FILE
+  file: *FILE
+  calculator: *CAL
